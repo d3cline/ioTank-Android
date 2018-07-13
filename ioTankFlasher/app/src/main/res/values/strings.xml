@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">ioTank Flasher</string>
+    <string name="textview">TextView</string>
+    <string name="iotank_token">ioTank Token</string>
+    <string name="ap_ssid">AP SSID</string>
+    <string name="ap_password">AP Password</string>
+    <string name="radio_on">Radio on</string>
+    <string name="send_to_cloud">Send to Cloud</string>
+    <string name="temp_1">Temp 1</string>
+    <string name="temp_2">Temp 2</string>
+    <string name="humidity">Humidity</string>
+    <string name="uvi">UVI</string>
+    <string name="lux">Lux</string>
+    <string name="flash">Flash</string>
+    <string name="wifi">WiFi</string>
+    <string name="rssi">Rssi</string>
+    <string name="ip">IP</string>
+</resources>

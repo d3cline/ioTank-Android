@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.objectsyndicate.iotankflasher.MainActivity"
+    >
+
+    <TabHost
+        android:id="@+id/tabhost"
+        android:layout_width="381dp"
+        android:layout_height="509dp"
+        android:layout_marginBottom="0dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteY="-89dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:id="@+id/tab1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <ScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        tools:ignore="UselessParent">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:padding="20dp">
+
+                            <TextView
+                                android:id="@+id/textView3"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/ip" />
+
+                            <TextView
+                                android:id="@+id/NetView"
+                                android:layout_width="match_parent"
+                                android:layout_height="20dp"
+                                android:autoLink="web"
+                                android:minHeight="60dp" />
+
+                            <TextView
+                                android:id="@+id/T1View"
+                                android:layout_width="match_parent"
+                                android:layout_height="20dp"
+                                android:minHeight="60dp"
+                                android:text="@string/temp_1" />
+
+                            <ProgressBar
+                                android:id="@+id/T1Prog"
+                                style="?android:attr/progressBarStyleHorizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="20dp"
+                                android:paddingEnd="10dp"
+                                android:paddingStart="10dp"
+                                android:progressTint="@android:color/holo_red_dark" />
+
+                            <TextView
+                                android:id="@+id/T2View"
+                                android:layout_width="match_parent"
+                                android:layout_height="20dp"
+                                android:minHeight="60dp"
+                                android:text="@string/temp_2" />
+
+                            <ProgressBar
+                                android:id="@+id/T2Prog"
+                                style="?android:attr/progressBarStyleHorizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="20dp"
+                                android:max="50"
+                                android:paddingEnd="10dp"
+                                android:paddingStart="10dp"
+                                android:progressTint="@android:color/holo_orange_light"
+                                android:visibility="visible" />
+
+                            <TextView
+                                android:id="@+id/HView"
+                                android:layout_width="match_parent"
+                                android:layout_height="20dp"
+                                android:minHeight="60dp"
+                                android:text="@string/humidity" />
+
+                            <ProgressBar
+                                android:id="@+id/Hprog"
+                                style="?android:attr/progressBarStyleHorizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="20dp"
+                                android:max="100"
+                                android:paddingEnd="10dp"
+                                android:paddingStart="10dp"
+                                android:progressTint="@android:color/holo_blue_dark"
+                                android:visibility="visible" />
+
+                            <TextView
+                                android:id="@+id/UVView"
+                                android:layout_width="match_parent"
+                                android:layout_height="20dp"
+                                android:minHeight="60dp"
+                                android:text="@string/uvi" />
+
+                            <ProgressBar
+                                android:id="@+id/UVprog"
+                                style="?android:attr/progressBarStyleHorizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="20dp"
+                                android:max="120"
+                                android:paddingEnd="10dp"
+                                android:paddingStart="10dp"
+                                android:progressTint="@android:color/holo_purple"
+                                android:visibility="visible" />
+
+                            <TextView
+                                android:id="@+id/LView"
+                                android:layout_width="match_parent"
+                                android:layout_height="20dp"
+                                android:minHeight="60dp"
+                                android:text="@string/lux" />
+
+                            <ProgressBar
+                                android:id="@+id/Lprog"
+                                style="?android:attr/progressBarStyleHorizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="20dp"
+                                android:max="50000"
+                                android:paddingEnd="10dp"
+                                android:paddingStart="10dp"
+                                android:progressTint="@android:color/darker_gray" />
+
+                            <TextView
+                                android:id="@+id/RSSIView"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/rssi" />
+
+                            <ProgressBar
+                                android:id="@+id/RSSIprog"
+                                style="?android:attr/progressBarStyleHorizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="20sp"
+                                android:paddingEnd="10dp"
+                                android:paddingStart="10dp"
+                                android:progressTint="@android:color/holo_green_light" />
+
+                        </LinearLayout>
+
+                    </ScrollView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/tab2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <ScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        tools:ignore="UselessParent">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:padding="20dp">
+
+                            <Switch
+                                android:id="@+id/radioSwitch"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:checked="false"
+                                android:text="@string/radio_on"
+                                android:visibility="visible" />
+
+                            <Switch
+                                android:id="@+id/cloudSwitch"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:checked="false"
+                                android:text="@string/send_to_cloud"
+                                android:visibility="visible" />
+
+                            <TextView
+                                android:id="@+id/tokenText"
+                                android:layout_width="match_parent"
+                                android:layout_height="25dp"
+                                android:layout_weight="1"
+                                android:text="ioTank Auth Token"
+                                android:visibility="invisible" />
+
+                            <EditText
+                                android:id="@+id/TokenEdit"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:contentDescription="@string/iotank_token"
+                                android:ems="10"
+                                android:inputType="textPersonName"
+                                android:labelFor="@+id/TokenEdit"
+                                android:visibility="invisible" />
+
+                            <TextView
+                                android:id="@+id/SSIDText"
+                                android:layout_width="match_parent"
+                                android:layout_height="25dp"
+                                android:layout_weight="1"
+                                android:text="Wifi AP SSID"
+                                android:visibility="invisible" />
+
+                            <EditText
+                                android:id="@+id/SSIDEdit"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:contentDescription="@string/ap_ssid"
+                                android:ems="10"
+                                android:inputType="textPersonName"
+                                android:labelFor="@+id/SSIDEdit"
+                                android:visibility="invisible" />
+
+                            <TextView
+                                android:id="@+id/APPassText"
+                                android:layout_width="match_parent"
+                                android:layout_height="25dp"
+                                android:layout_weight="1"
+                                android:text="Wifi Password"
+                                android:visibility="invisible" />
+
+                            <EditText
+                                android:id="@+id/APPassEdit"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:contentDescription="@string/ap_password"
+                                android:ems="10"
+                                android:inputType="textPersonName"
+                                android:labelFor="@+id/APPassEdit"
+                                android:visibility="invisible" />
+
+                            <ProgressBar
+                                android:id="@+id/progressBar"
+                                style="?android:attr/progressBarStyleHorizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="30dp"
+                                android:layout_weight="1"
+                                android:visibility="visible"
+                                tools:layout_editor_absoluteX="39dp"
+                                tools:layout_editor_absoluteY="65dp" />
+
+                            <Button
+                                android:id="@+id/sendButton"
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                android:layout_marginStart="8dp"
+                                android:layout_weight="1"
+                                android:onClick="sendOnClick"
+                                android:text="@string/flash"
+                                android:visibility="visible"
+                                app:layout_constraintStart_toEndOf="@+id/Update"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                        </LinearLayout>
+                    </ScrollView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/tab3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="20dp">
+
+                    <ScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        tools:ignore="UselessParent">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:padding="20dp"
+                            >
+
+                            <TextView
+                                android:id="@+id/textView"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Update/Factory restore Firmware?" />
+
+                            <ProgressBar
+                                android:id="@+id/progressBar2"
+                                style="?android:attr/progressBarStyleHorizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:progressTint="@android:color/holo_red_dark" />
+
+                            <Button
+                                android:id="@+id/Update"
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                android:text="Update"
+                                android:onClick="UpdateOnClick"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+                        </LinearLayout>
+                    </ScrollView>
+
+                </LinearLayout>
+            </FrameLayout>
+        </LinearLayout>
+    </TabHost>
+
+</android.support.constraint.ConstraintLayout>
